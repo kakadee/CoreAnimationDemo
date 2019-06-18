@@ -8,27 +8,31 @@
 
 #import "UIViewAnimationViewController.h"
 #import "DemoViewController.h"
+#import "UIViewAnimationTypeObject.h"
+#import "UIViewDemoViewController.h"
 
 @interface UIViewAnimationViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, copy) NSArray<NSString *> *dataArray;
 
-@property (nonatomic, strong) UIViewController *demoVC;
+@property (nonatomic, strong) UIViewDemoViewController *demoVC;
 
+@property (nonatomic, strong) UIViewAnimationTypeObject *typeObject;
 @end
 
 @implementation UIViewAnimationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@"Block基础动画",@"Block弹簧动画",@"Block过度动画",@"Block关键帧动画",@"Block系统动画",@"动画块"];
+    self.typeObject = [[UIViewAnimationTypeObject alloc] init];
+    self.dataArray = [self.typeObject getAllName];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
 }
 
-- (void)pushDemoVCWithView:(UIView *)view {
-    [self.demoVC.view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    [self.demoVC.view addSubview:view];
+- (void)pushDemoVCWithType:(UIViewAnimationType)type {
+    self.demoVC = [[UIViewDemoViewController alloc] initWithAnimationType:type];
     [self.navigationController pushViewController:self.demoVC animated:YES];
 }
 
@@ -49,17 +53,9 @@
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        
-    } else if (indexPath.row == 1) {
-    }
+    [self pushDemoVCWithType:indexPath.row];
 }
 
 #pragma mark - getter & setter
-- (UIViewController *)demoVC {
-    if (!_demoVC) {
-        _demoVC = [[UIViewController alloc] init];
-    }
-    return _demoVC;
-}
+
 @end

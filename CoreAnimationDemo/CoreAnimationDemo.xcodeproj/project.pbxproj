@@ -17,6 +17,9 @@
 		304CA35222B1F477006C645B /* CALayerContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 304CA35122B1F477006C645B /* CALayerContentView.m */; };
 		30DBA73422B8B7BF005615F7 /* UIViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DBA73322B8B7BF005615F7 /* UIViewAnimationViewController.m */; };
 		30DBA73722B8C45A005615F7 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DBA73622B8C45A005615F7 /* DemoViewController.m */; };
+		30DBA73A22B8CBD8005615F7 /* UIViewAnimationTypeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DBA73922B8CBD8005615F7 /* UIViewAnimationTypeObject.m */; };
+		30DBA73D22B8D192005615F7 /* UIViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DBA73C22B8D192005615F7 /* UIViewDemoViewController.m */; };
+		E180ED91FDBFCF1F07901A41 /* libPods-CoreAnimationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B81E9C80E226F33BFBA896 /* libPods-CoreAnimationDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,13 @@
 		30DBA73322B8B7BF005615F7 /* UIViewAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewAnimationViewController.m; sourceTree = "<group>"; };
 		30DBA73522B8C45A005615F7 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		30DBA73622B8C45A005615F7 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		30DBA73822B8CBD8005615F7 /* UIViewAnimationTypeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewAnimationTypeObject.h; sourceTree = "<group>"; };
+		30DBA73922B8CBD8005615F7 /* UIViewAnimationTypeObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewAnimationTypeObject.m; sourceTree = "<group>"; };
+		30DBA73B22B8D192005615F7 /* UIViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewDemoViewController.h; sourceTree = "<group>"; };
+		30DBA73C22B8D192005615F7 /* UIViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewDemoViewController.m; sourceTree = "<group>"; };
+		76B81E9C80E226F33BFBA896 /* libPods-CoreAnimationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreAnimationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA70527F17489CC7B1E58E36 /* Pods-CoreAnimationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAnimationDemo.release.xcconfig"; path = "Target Support Files/Pods-CoreAnimationDemo/Pods-CoreAnimationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FC64554F23A4ACEF9A4419D7 /* Pods-CoreAnimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAnimationDemo.debug.xcconfig"; path = "Target Support Files/Pods-CoreAnimationDemo/Pods-CoreAnimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,17 +56,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E180ED91FDBFCF1F07901A41 /* libPods-CoreAnimationDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		139E30659AD504C5BCA8A468 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC64554F23A4ACEF9A4419D7 /* Pods-CoreAnimationDemo.debug.xcconfig */,
+				FA70527F17489CC7B1E58E36 /* Pods-CoreAnimationDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3002AABE22A682E400C73A6E = {
 			isa = PBXGroup;
 			children = (
 				3002AAC922A682E400C73A6E /* CoreAnimationDemo */,
 				3002AAC822A682E400C73A6E /* Products */,
+				139E30659AD504C5BCA8A468 /* Pods */,
+				442339EE015855E08CB62C7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,8 +135,20 @@
 			children = (
 				30DBA73222B8B7BF005615F7 /* UIViewAnimationViewController.h */,
 				30DBA73322B8B7BF005615F7 /* UIViewAnimationViewController.m */,
+				30DBA73B22B8D192005615F7 /* UIViewDemoViewController.h */,
+				30DBA73C22B8D192005615F7 /* UIViewDemoViewController.m */,
+				30DBA73822B8CBD8005615F7 /* UIViewAnimationTypeObject.h */,
+				30DBA73922B8CBD8005615F7 /* UIViewAnimationTypeObject.m */,
 			);
 			path = UIViewAnimation;
+			sourceTree = "<group>";
+		};
+		442339EE015855E08CB62C7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76B81E9C80E226F33BFBA896 /* libPods-CoreAnimationDemo.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +158,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3002AADD22A682E500C73A6E /* Build configuration list for PBXNativeTarget "CoreAnimationDemo" */;
 			buildPhases = (
+				F67CE19CB8D5F0B0FC5D4AF2 /* [CP] Check Pods Manifest.lock */,
 				3002AAC322A682E400C73A6E /* Sources */,
 				3002AAC422A682E400C73A6E /* Frameworks */,
 				3002AAC522A682E400C73A6E /* Resources */,
@@ -181,15 +216,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F67CE19CB8D5F0B0FC5D4AF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreAnimationDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3002AAC322A682E400C73A6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30DBA73D22B8D192005615F7 /* UIViewDemoViewController.m in Sources */,
 				3002AADA22A682E500C73A6E /* main.m in Sources */,
 				304CA34E22B1EE3E006C645B /* CALayerTableViewController.m in Sources */,
 				30DBA73422B8B7BF005615F7 /* UIViewAnimationViewController.m in Sources */,
 				30DBA73722B8C45A005615F7 /* DemoViewController.m in Sources */,
+				30DBA73A22B8CBD8005615F7 /* UIViewAnimationTypeObject.m in Sources */,
 				304CA35222B1F477006C645B /* CALayerContentView.m in Sources */,
 				3002AACC22A682E400C73A6E /* AppDelegate.m in Sources */,
 				3002AAE722A7D15500C73A6E /* MainViewController.m in Sources */,
@@ -314,11 +376,13 @@
 		};
 		3002AADE22A682E500C73A6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC64554F23A4ACEF9A4419D7 /* Pods-CoreAnimationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6QSEMKSK2;
 				INFOPLIST_FILE = CoreAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,11 +395,13 @@
 		};
 		3002AADF22A682E500C73A6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA70527F17489CC7B1E58E36 /* Pods-CoreAnimationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6QSEMKSK2;
 				INFOPLIST_FILE = CoreAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
