@@ -14,6 +14,8 @@
 
 @property (nonatomic, strong) UIImageView *imageView;
 
+@property (nonatomic, strong) UIView *testView;
+
 @end
 
 @implementation CALayerDemoViewController
@@ -23,6 +25,10 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.layerContentsDemoView];
 
+    self.testView = [[UIView alloc] initWithFrame:CGRectMake(50, 300, 100, 100)];
+    self.testView.backgroundColor = [UIColor blueColor];
+    self.testView.layer.cornerRadius = 10;
+    [self.view addSubview:self.testView];
     //create sublayer
     CALayer *blueLayer = [CALayer layer];
     blueLayer.frame = CGRectMake(50.0f, 100.0f, 100.0f, 100.0f);

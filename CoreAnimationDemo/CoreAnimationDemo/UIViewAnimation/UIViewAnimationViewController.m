@@ -1,33 +1,35 @@
 //
-//  ViewController.m
+//  UIViewAnimationViewController.m
 //  CoreAnimationDemo
 //
-//  Created by lijian on 2019/6/4.
+//  Created by lijian on 2019/6/18.
 //  Copyright © 2019 com.yaymedialabs. All rights reserved.
 //
 
-#import "MainViewController.h"
-#import "CALayerTableViewController.h"
-#import "UIViewAnimation/UIViewAnimationViewController.h"
+#import "UIViewAnimationViewController.h"
+#import "DemoViewController.h"
 
-@interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface UIViewAnimationViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, copy) NSArray<NSString *> *dataArray;
 
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIViewController *demoVC;
 
 @end
 
-@implementation MainViewController
+@implementation UIViewAnimationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@"CALayer",@"UIViewAnimation",@"3"];
-    self.tableView = [[UITableView alloc] init];
-    self.tableView.frame = self.view.bounds;
+    self.dataArray = @[@"Block基础动画",@"Block弹簧动画",@"Block过度动画",@"Block关键帧动画",@"Block系统动画",@"动画块"];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.view addSubview:self.tableView];
+}
+
+- (void)pushDemoVCWithView:(UIView *)view {
+    [self.demoVC.view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self.demoVC.view addSubview:view];
+    [self.navigationController pushViewController:self.demoVC animated:YES];
 }
 
 #pragma mark - UITableViewDataSource
@@ -48,11 +50,16 @@
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
-        CALayerTableViewController *layerTableVC = [[CALayerTableViewController alloc] init];
-        [self.navigationController pushViewController:layerTableVC animated:YES];
+        
     } else if (indexPath.row == 1) {
-        UIViewAnimationViewController *viewAnimationVC = [[UIViewAnimationViewController alloc] init];
-        [self.navigationController pushViewController:viewAnimationVC animated:YES];
     }
+}
+
+#pragma mark - getter & setter
+- (UIViewController *)demoVC {
+    if (!_demoVC) {
+        _demoVC = [[UIViewController alloc] init];
+    }
+    return _demoVC;
 }
 @end

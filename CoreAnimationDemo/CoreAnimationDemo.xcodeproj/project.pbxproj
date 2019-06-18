@@ -13,6 +13,10 @@
 		3002AAE122A6844100C73A6E /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 3002AAE022A6844100C73A6E /* cat.png */; };
 		3002AAE422A7CB8D00C73A6E /* CALayerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3002AAE322A7CB8D00C73A6E /* CALayerDemoViewController.m */; };
 		3002AAE722A7D15500C73A6E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3002AAE622A7D15500C73A6E /* MainViewController.m */; };
+		304CA34E22B1EE3E006C645B /* CALayerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304CA34D22B1EE3E006C645B /* CALayerTableViewController.m */; };
+		304CA35222B1F477006C645B /* CALayerContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 304CA35122B1F477006C645B /* CALayerContentView.m */; };
+		30DBA73422B8B7BF005615F7 /* UIViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DBA73322B8B7BF005615F7 /* UIViewAnimationViewController.m */; };
+		30DBA73722B8C45A005615F7 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DBA73622B8C45A005615F7 /* DemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,14 @@
 		3002AAE322A7CB8D00C73A6E /* CALayerDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerDemoViewController.m; sourceTree = "<group>"; };
 		3002AAE522A7D15500C73A6E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		3002AAE622A7D15500C73A6E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		304CA34C22B1EE3E006C645B /* CALayerTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALayerTableViewController.h; sourceTree = "<group>"; };
+		304CA34D22B1EE3E006C645B /* CALayerTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerTableViewController.m; sourceTree = "<group>"; };
+		304CA35022B1F477006C645B /* CALayerContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALayerContentView.h; sourceTree = "<group>"; };
+		304CA35122B1F477006C645B /* CALayerContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerContentView.m; sourceTree = "<group>"; };
+		30DBA73222B8B7BF005615F7 /* UIViewAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewAnimationViewController.h; sourceTree = "<group>"; };
+		30DBA73322B8B7BF005615F7 /* UIViewAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewAnimationViewController.m; sourceTree = "<group>"; };
+		30DBA73522B8C45A005615F7 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		30DBA73622B8C45A005615F7 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,18 +71,50 @@
 		3002AAC922A682E400C73A6E /* CoreAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				30DBA73122B8B776005615F7 /* UIViewAnimation */,
+				304CA34B22B1EB23006C645B /* CALayer */,
 				3002AACA22A682E400C73A6E /* AppDelegate.h */,
 				3002AACB22A682E400C73A6E /* AppDelegate.m */,
 				3002AAE522A7D15500C73A6E /* MainViewController.h */,
 				3002AAE622A7D15500C73A6E /* MainViewController.m */,
-				3002AAE222A7CB8D00C73A6E /* CALayerDemoViewController.h */,
-				3002AAE322A7CB8D00C73A6E /* CALayerDemoViewController.m */,
+				30DBA73522B8C45A005615F7 /* DemoViewController.h */,
+				30DBA73622B8C45A005615F7 /* DemoViewController.m */,
 				3002AAE022A6844100C73A6E /* cat.png */,
 				3002AAD322A682E500C73A6E /* Assets.xcassets */,
 				3002AAD822A682E500C73A6E /* Info.plist */,
 				3002AAD922A682E500C73A6E /* main.m */,
 			);
 			path = CoreAnimationDemo;
+			sourceTree = "<group>";
+		};
+		304CA34B22B1EB23006C645B /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				304CA34F22B1F459006C645B /* View */,
+				304CA34C22B1EE3E006C645B /* CALayerTableViewController.h */,
+				304CA34D22B1EE3E006C645B /* CALayerTableViewController.m */,
+				3002AAE222A7CB8D00C73A6E /* CALayerDemoViewController.h */,
+				3002AAE322A7CB8D00C73A6E /* CALayerDemoViewController.m */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		304CA34F22B1F459006C645B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				304CA35022B1F477006C645B /* CALayerContentView.h */,
+				304CA35122B1F477006C645B /* CALayerContentView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30DBA73122B8B776005615F7 /* UIViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				30DBA73222B8B7BF005615F7 /* UIViewAnimationViewController.h */,
+				30DBA73322B8B7BF005615F7 /* UIViewAnimationViewController.m */,
+			);
+			path = UIViewAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +187,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3002AADA22A682E500C73A6E /* main.m in Sources */,
+				304CA34E22B1EE3E006C645B /* CALayerTableViewController.m in Sources */,
+				30DBA73422B8B7BF005615F7 /* UIViewAnimationViewController.m in Sources */,
+				30DBA73722B8C45A005615F7 /* DemoViewController.m in Sources */,
+				304CA35222B1F477006C645B /* CALayerContentView.m in Sources */,
 				3002AACC22A682E400C73A6E /* AppDelegate.m in Sources */,
 				3002AAE722A7D15500C73A6E /* MainViewController.m in Sources */,
 				3002AAE422A7CB8D00C73A6E /* CALayerDemoViewController.m in Sources */,
