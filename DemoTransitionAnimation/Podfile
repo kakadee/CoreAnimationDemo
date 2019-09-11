@@ -1,0 +1,3 @@
+target 'DemoTransitionAnimation' do
+pod 'Masonry'
+end

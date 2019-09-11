@@ -93,20 +93,36 @@
 		3002AAC922A682E400C73A6E /* CoreAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				30DBA73122B8B776005615F7 /* UIViewAnimation */,
-				304CA34B22B1EB23006C645B /* CALayer */,
 				3002AACA22A682E400C73A6E /* AppDelegate.h */,
 				3002AACB22A682E400C73A6E /* AppDelegate.m */,
-				3002AAE522A7D15500C73A6E /* MainViewController.h */,
-				3002AAE622A7D15500C73A6E /* MainViewController.m */,
+				3040F4D3230E904E0086DFF9 /* RootController */,
+				30DBA73122B8B776005615F7 /* UIViewAnimation */,
+				304CA34B22B1EB23006C645B /* CALayer */,
 				30DBA73522B8C45A005615F7 /* DemoViewController.h */,
 				30DBA73622B8C45A005615F7 /* DemoViewController.m */,
+				3040F4D4230E90A80086DFF9 /* Supporting Files */,
+			);
+			path = CoreAnimationDemo;
+			sourceTree = "<group>";
+		};
+		3040F4D3230E904E0086DFF9 /* RootController */ = {
+			isa = PBXGroup;
+			children = (
+				3002AAE522A7D15500C73A6E /* MainViewController.h */,
+				3002AAE622A7D15500C73A6E /* MainViewController.m */,
+			);
+			path = RootController;
+			sourceTree = "<group>";
+		};
+		3040F4D4230E90A80086DFF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				3002AAE022A6844100C73A6E /* cat.png */,
 				3002AAD322A682E500C73A6E /* Assets.xcassets */,
 				3002AAD822A682E500C73A6E /* Info.plist */,
 				3002AAD922A682E500C73A6E /* main.m */,
 			);
-			path = CoreAnimationDemo;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		304CA34B22B1EB23006C645B /* CALayer */ = {

@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		302F1DD9230417CA0000BB36 /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302F1DD8230417CA0000BB36 /* ChildViewController.m */; };
+		305D756723043245004F7B16 /* CATransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 305D756623043245004F7B16 /* CATransitionViewController.m */; };
+		3079731B2303ABA0002B3021 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3079731A2303ABA0002B3021 /* AppDelegate.m */; };
+		3079731E2303ABA0002B3021 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3079731D2303ABA0002B3021 /* ViewController.m */; };
+		307973232303ABA3002B3021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307973222303ABA3002B3021 /* Assets.xcassets */; };
+		307973292303ABA3002B3021 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 307973282303ABA3002B3021 /* main.m */; };
+		307973372304151B002B3021 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307973362304151B002B3021 /* ParentViewController.m */; };
+		30B09AD423055DC2009BE124 /* TransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B09AD323055DC2009BE124 /* TransitionViewController.m */; };
+		30B09AD723055E33009BE124 /* TransitionPresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B09AD623055E33009BE124 /* TransitionPresentedViewController.m */; };
+		30B09ADA23056315009BE124 /* TransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B09AD923056315009BE124 /* TransitionAnimator.m */; };
+		7575783C17714D7A8AA8FC0E /* libPods-DemoTransitionAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DA1CCBB821C9C90776A3AD /* libPods-DemoTransitionAnimation.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		302F1DD7230417CA0000BB36 /* ChildViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
+		302F1DD8230417CA0000BB36 /* ChildViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
+		305D756523043245004F7B16 /* CATransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CATransitionViewController.h; sourceTree = "<group>"; };
+		305D756623043245004F7B16 /* CATransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CATransitionViewController.m; sourceTree = "<group>"; };
+		307973162303ABA0002B3021 /* DemoTransitionAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoTransitionAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		307973192303ABA0002B3021 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3079731A2303ABA0002B3021 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3079731C2303ABA0002B3021 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3079731D2303ABA0002B3021 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		307973222303ABA3002B3021 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		307973272303ABA3002B3021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		307973282303ABA3002B3021 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		307973352304151B002B3021 /* ParentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
+		307973362304151B002B3021 /* ParentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
+		30B09AD223055DC2009BE124 /* TransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionViewController.h; sourceTree = "<group>"; };
+		30B09AD323055DC2009BE124 /* TransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionViewController.m; sourceTree = "<group>"; };
+		30B09AD523055E33009BE124 /* TransitionPresentedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionPresentedViewController.h; sourceTree = "<group>"; };
+		30B09AD623055E33009BE124 /* TransitionPresentedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionPresentedViewController.m; sourceTree = "<group>"; };
+		30B09AD823056315009BE124 /* TransitionAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionAnimator.h; sourceTree = "<group>"; };
+		30B09AD923056315009BE124 /* TransitionAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimator.m; sourceTree = "<group>"; };
+		3E76444A400851E1D18D077B /* Pods-DemoTransitionAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTransitionAnimation.release.xcconfig"; path = "Target Support Files/Pods-DemoTransitionAnimation/Pods-DemoTransitionAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		82CD4D0ACE27DD5B531FEEEA /* Pods-DemoTransitionAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTransitionAnimation.debug.xcconfig"; path = "Target Support Files/Pods-DemoTransitionAnimation/Pods-DemoTransitionAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		D7DA1CCBB821C9C90776A3AD /* libPods-DemoTransitionAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoTransitionAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		307973132303ABA0002B3021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7575783C17714D7A8AA8FC0E /* libPods-DemoTransitionAnimation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16C5D2B9300345890272E364 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7DA1CCBB821C9C90776A3AD /* libPods-DemoTransitionAnimation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3079730D2303ABA0002B3021 = {
+			isa = PBXGroup;
+			children = (
+				307973182303ABA0002B3021 /* DemoTransitionAnimation */,
+				307973172303ABA0002B3021 /* Products */,
+				DB156D911305F827E182C395 /* Pods */,
+				16C5D2B9300345890272E364 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		307973172303ABA0002B3021 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				307973162303ABA0002B3021 /* DemoTransitionAnimation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		307973182303ABA0002B3021 /* DemoTransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				3079733423041374002B3021 /* ViewControllerTransition */,
+				3079733323041371002B3021 /* CATransition */,
+				307973322304135D002B3021 /* transitionFromViewController */,
+				307973192303ABA0002B3021 /* AppDelegate.h */,
+				3079731A2303ABA0002B3021 /* AppDelegate.m */,
+				3079731C2303ABA0002B3021 /* ViewController.h */,
+				3079731D2303ABA0002B3021 /* ViewController.m */,
+				307973222303ABA3002B3021 /* Assets.xcassets */,
+				307973272303ABA3002B3021 /* Info.plist */,
+				307973282303ABA3002B3021 /* main.m */,
+			);
+			path = DemoTransitionAnimation;
+			sourceTree = "<group>";
+		};
+		307973322304135D002B3021 /* transitionFromViewController */ = {
+			isa = PBXGroup;
+			children = (
+				307973352304151B002B3021 /* ParentViewController.h */,
+				307973362304151B002B3021 /* ParentViewController.m */,
+				302F1DD7230417CA0000BB36 /* ChildViewController.h */,
+				302F1DD8230417CA0000BB36 /* ChildViewController.m */,
+			);
+			path = transitionFromViewController;
+			sourceTree = "<group>";
+		};
+		3079733323041371002B3021 /* CATransition */ = {
+			isa = PBXGroup;
+			children = (
+				305D756523043245004F7B16 /* CATransitionViewController.h */,
+				305D756623043245004F7B16 /* CATransitionViewController.m */,
+			);
+			path = CATransition;
+			sourceTree = "<group>";
+		};
+		3079733423041374002B3021 /* ViewControllerTransition */ = {
+			isa = PBXGroup;
+			children = (
+				30B09AD223055DC2009BE124 /* TransitionViewController.h */,
+				30B09AD323055DC2009BE124 /* TransitionViewController.m */,
+				30B09AD523055E33009BE124 /* TransitionPresentedViewController.h */,
+				30B09AD623055E33009BE124 /* TransitionPresentedViewController.m */,
+				30B09AD823056315009BE124 /* TransitionAnimator.h */,
+				30B09AD923056315009BE124 /* TransitionAnimator.m */,
+			);
+			path = ViewControllerTransition;
+			sourceTree = "<group>";
+		};
+		DB156D911305F827E182C395 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82CD4D0ACE27DD5B531FEEEA /* Pods-DemoTransitionAnimation.debug.xcconfig */,
+				3E76444A400851E1D18D077B /* Pods-DemoTransitionAnimation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		307973152303ABA0002B3021 /* DemoTransitionAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3079732C2303ABA3002B3021 /* Build configuration list for PBXNativeTarget "DemoTransitionAnimation" */;
+			buildPhases = (
+				8CB28E3EFBB287DBEE772B80 /* [CP] Check Pods Manifest.lock */,
+				307973122303ABA0002B3021 /* Sources */,
+				307973132303ABA0002B3021 /* Frameworks */,
+				307973142303ABA0002B3021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoTransitionAnimation;
+			productName = DemoTransitionAnimation;
+			productReference = 307973162303ABA0002B3021 /* DemoTransitionAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3079730E2303ABA0002B3021 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = lijian;
+				TargetAttributes = {
+					307973152303ABA0002B3021 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 307973112303ABA0002B3021 /* Build configuration list for PBXProject "DemoTransitionAnimation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3079730D2303ABA0002B3021;
+			productRefGroup = 307973172303ABA0002B3021 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				307973152303ABA0002B3021 /* DemoTransitionAnimation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		307973142303ABA0002B3021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307973232303ABA3002B3021 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CB28E3EFBB287DBEE772B80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoTransitionAnimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		307973122303ABA0002B3021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3079731E2303ABA0002B3021 /* ViewController.m in Sources */,
+				30B09ADA23056315009BE124 /* TransitionAnimator.m in Sources */,
+				30B09AD423055DC2009BE124 /* TransitionViewController.m in Sources */,
+				30B09AD723055E33009BE124 /* TransitionPresentedViewController.m in Sources */,
+				307973372304151B002B3021 /* ParentViewController.m in Sources */,
+				307973292303ABA3002B3021 /* main.m in Sources */,
+				3079731B2303ABA0002B3021 /* AppDelegate.m in Sources */,
+				302F1DD9230417CA0000BB36 /* ChildViewController.m in Sources */,
+				305D756723043245004F7B16 /* CATransitionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3079732A2303ABA3002B3021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3079732B2303ABA3002B3021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3079732D2303ABA3002B3021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82CD4D0ACE27DD5B531FEEEA /* Pods-DemoTransitionAnimation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6QSEMKSK2;
+				INFOPLIST_FILE = DemoTransitionAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lijian.DemoTransitionAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3079732E2303ABA3002B3021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E76444A400851E1D18D077B /* Pods-DemoTransitionAnimation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6QSEMKSK2;
+				INFOPLIST_FILE = DemoTransitionAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lijian.DemoTransitionAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		307973112303ABA0002B3021 /* Build configuration list for PBXProject "DemoTransitionAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3079732A2303ABA3002B3021 /* Debug */,
+				3079732B2303ABA3002B3021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3079732C2303ABA3002B3021 /* Build configuration list for PBXNativeTarget "DemoTransitionAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3079732D2303ABA3002B3021 /* Debug */,
+				3079732E2303ABA3002B3021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3079730E2303ABA0002B3021 /* Project object */;
+}

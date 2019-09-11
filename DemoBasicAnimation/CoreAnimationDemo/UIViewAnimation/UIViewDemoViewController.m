@@ -17,6 +17,10 @@
 
 @property (nonatomic, strong) UIButton *startAnimationButton;
 
+@property(nonatomic, strong) UIView *transitionView1;
+
+@property(nonatomic, strong) UIView *transitionView2;
+
 @end
 
 @implementation UIViewDemoViewController
@@ -69,6 +73,8 @@
         case UIViewAnimationTypeSpring:
             [self startSpringAnimation];
             break;
+        case UIViewAnimationTypeWithOutBlock:
+            [self startDemoAnimation];
         default:
             break;
     }
@@ -92,4 +98,25 @@
     }];
 }
 
+// 在viewblock 里执行CABasicAnimation动画
+// 在animation Block 里改变的属性会一直改变，CABasicAnimation改变的属性会复原
+- (void)startDemoAnimation {
+    CGPoint myNewPosition = CGPointMake(100, 200);
+    [UIView animateWithDuration:1.0 animations:^{
+        // Change the opacity implicitly.
+        self.basicView.layer.opacity = 0.5;
+        //        self.basicView.backgroundColor = [UIColor greenColor];
+        
+        
+        // Change the position explicitly.
+        CABasicAnimation* theAnim = [CABasicAnimation animationWithKeyPath:@"position"];
+        theAnim.fromValue = [NSValue valueWithCGPoint:self.basicView.layer.position];
+        theAnim.toValue = [NSValue valueWithCGPoint:myNewPosition];
+        theAnim.duration = 5.0;
+        theAnim.speed = 5.0;
+        theAnim.repeatCount = 2;
+        [self.basicView.layer addAnimation:theAnim forKey:@"AnimateFrame"];
+    }];
+    
+}
 @end

@@ -7,8 +7,6 @@
 //
 
 #import "MainViewController.h"
-#import "CALayerTableViewController.h"
-#import "UIViewAnimation/UIViewAnimationViewController.h"
 
 @interface MainViewController () <UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate>
 
