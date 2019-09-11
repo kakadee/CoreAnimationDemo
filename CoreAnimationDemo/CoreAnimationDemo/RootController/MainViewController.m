@@ -10,7 +10,7 @@
 #import "CALayerTableViewController.h"
 #import "UIViewAnimation/UIViewAnimationViewController.h"
 
-@interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface MainViewController () <UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate>
 
 @property (nonatomic, copy) NSArray<NSString *> *dataArray;
 
@@ -28,6 +28,9 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
+    
+    self.navigationController.delegate = self;
+    
 }
 
 #pragma mark - UITableViewDataSource
@@ -55,4 +58,7 @@
         [self.navigationController pushViewController:viewAnimationVC animated:YES];
     }
 }
+
+#pragma mark - UINavigationControllerDelegate
+
 @end
